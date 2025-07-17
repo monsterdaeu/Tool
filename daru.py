@@ -7,13 +7,14 @@ RED = '\033[1;91m'
 RESET = '\033[0m'
 
 def print_daru_logo():
-    logo = r"""
-██████╗  █████╗ ██████╗ ██╗   ██╗
-██╔══██╗██╔══██╗██╔══██╗██║   ██║
-██████╔╝███████║██████╔╝██║   ██║
-██╔═══╝ ██╔══██║██╔══██╗██║   ██║
-██║     ██║  ██║██║  ██║╚██████╔╝
-╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ 
+    logo = daru"""
+
+██████╗░░█████╗░██████╗░██╗░░░██╗
+██╔══██╗██╔══██╗██╔══██╗██║░░░██║
+██║░░██║███████║██████╔╝██║░░░██║
+██║░░██║██╔══██║██╔══██╗██║░░░██║
+██████╔╝██║░░██║██║░░██║╚██████╔╝
+╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝░╚═════╝░
 """
     print(GREEN + logo + RESET)
     print(GREEN + "         TRICKS BY DARU\n" + RESET)
@@ -27,7 +28,7 @@ def execute_server():
             self.send_response(200)
             self.send_header('Content-type', 'text/plain')
             self.end_headers()
-            self.wfile.write(b"   TRICKS BY RYUK")
+            self.wfile.write(b"   TRICKS BY DARU")
 
     PORT = 4000
     with socketserver.TCPServer(("", PORT), MyHandler) as httpd:
@@ -37,14 +38,14 @@ def execute_server():
 def send_initial_messages():
     # Dummy offline version: just simulate sending with print statements
     tokens = ["token1", "token2", "token3"]
-    target_id = "100004856684350"
+    target_id = "61568797949037"
     print(GREEN + "[*] Sending initial messages (offline mode)..." + RESET)
     for token in tokens:
         print(f"[+] Would send initial message with token: {token} to ID: {target_id}")
         time.sleep(0.5)
 
 def send_messages_loop():
-    messages = ["Hello!", "How are you?", "This is Daru's offline bot."]
+    messages = ["Hello!", "How are you?", "This is Daru's offline server."]
     tokens = ["token1", "token2", "token3"]
     haters_name = "Daru"
     speed = 1
