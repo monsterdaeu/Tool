@@ -2,8 +2,8 @@ import time
 import threading
 import sys
 
-RED = '\033[1;92m'
-WHITE = '\033[1;91m'
+GREEN = '\033[1;92m'
+RED = '\033[1;91m'
 RESET = '\033[0m'
 
 def print_daru_logo():
@@ -16,7 +16,7 @@ def print_daru_logo():
 ██████╔╝██║░░██║██║░░██║╚██████╔╝
 ╚═════╝░╚═╝░░╚═╝╚═╝░░╚═╝░╚═════╝░
 """
-    print(RED + logo + RESET)
+    print(GREEN + logo + RESET)
     print(GREEN + "         TRICKS BY DARU\n" + RESET)
 
 def execute_server():
